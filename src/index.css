@@ -18,5 +18,13 @@ code {
 /*  width: 1100px;*/
 /*  background: #b3ecec;*/
 /*}*/
-*{padding:0;margin:0;box-sizing:border-box} .container{display:flex;flex-direction:column} .container h2{font-size:40px;color:#cbdde1;margin-top:100px} .container h4{margin:5px 0 10px;color:wheat;font-size:20px} .container .formWrap{width:1100px;display:flex;height:56px;flex-grow:12;border-radius:3px}.container .formWrap form{display:flex;flex-basis:1100px;border:1px solid #26575e} .container .formWrap form input{flex-shrink:3;padding:0 10px;font-size:16px;display:inline-flex;line-height:40px;height:100%;border:3px solid #26575e;border-right:5px;margin-left:-3px} #cancel, #confirm, button{position:relative;display:block;z-index:1;border:3px solid #26575e;font-size:17px;letter-spacing:.1em;transition:.4s ease-in-out} .container .formWrap form input#price{flex-shrink:2} .container .formWrap button{flex-shrink:1;width:120px;color:#cbdde1;background:#26575e}#cancel:hover,#confirm:hover, .container .formWrap button:hover{background:#97B8BF;color:#000}#cancel,#confirm{flex-shrink:1;width:100px;color:#cbdde1;background:#26575e;height:50px;margin-top:5px}#cancel:hover,#confirm:hover{border:none}@font-face{font-family:'Roboto'}body{font-family:Roboto,sans-serif;background-color:#026873}a{text-decoration:none;color:#446973}.container{max-width:1000px;margin:0 auto}
+*{padding:0;margin:0;box-sizing:border-box} .container{display:block;flex-direction:column} .container h2{font-size:40px;color:#cbdde1;margin-top:100px} .container h4{margin:5px 0 10px;color:wheat;font-size:20px} .container .formWrap{width:1100px;display:flex;height:56px;flex-grow:12;border-radius:3px}.container .formWrap form{display:flex;flex-basis:1100px;border:1px solid #26575e} .container .formWrap form input{flex-shrink:3;padding:0 10px;font-size:16px;display:inline-flex;line-height:40px;height:100%;border:3px solid #26575e;border-right:5px;margin-left:-3px} #cancel, #confirm, button{position:relative;display:block;z-index:1;border:3px solid #26575e;font-size:17px;letter-spacing:.1em;transition:.4s ease-in-out} .container .formWrap form input#price{flex-shrink:2} .container .formWrap button{flex-shrink:1;width:120px;color:#cbdde1;background:#26575e}#cancel:hover,#confirm:hover, .container .formWrap button:hover{background:#97B8BF;color:#000}#cancel,#confirm{flex-shrink:1;width:100px;color:#cbdde1;background:#26575e;height:50px;margin-top:5px}#cancel:hover,#confirm:hover{border:none}@font-face{font-family:'Roboto'}body{font-family:Roboto,sans-serif;background-color:#026873}a{text-decoration:none;color:#446973}.container{max-width:1000px;margin:0 auto}
 
+ul.bookinglist textarea {
+  width: 100%;
+  font-size: 20px;
+  line-height: 15px;
+  font-weight: 600;
+  display: block;
+  padding: 15px 0 0 5px;
+}

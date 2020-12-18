@@ -4,13 +4,14 @@ import InputDateIn from "./InputDateIn";
 import InputDateOut from "./InputDateOut";
 import InputPersons from "./InputPersons";
 import InputPrice from "./InputPrice";
+import BoookingList from "./BoookingList";
 
 
 
 
  function  Container() {
     return  (
-        <div className="container">
+        <div className ="container">
             <h2>Apartments</h2>
             <h4>A home away from home; choose the apartment that appeals to you the most</h4>
             <div className ="formWrap">
@@ -22,9 +23,13 @@ import InputPrice from "./InputPrice";
                      <InputPrice/>
                </form>
                 <button type="submit" id="submit">submit</button>
+
             </div>
             <button type="submit" id="confirm">confirm</button>
             <button type="submit" id="cancel">cancel</button>
+            <BoookingList/>
+            <BoookingList/>
+            <BoookingList/>
         </div>
 
 

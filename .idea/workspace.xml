@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="619868a7-330c-493f-8b49-20bce547aab7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputCity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputDateIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputDateOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputPersons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BookingItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BoookingList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TotalPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <workItem from="1608208728402" duration="843000" />
       <workItem from="1608241147223" duration="7813000" />
       <workItem from="1608296341585" duration="235000" />
-      <workItem from="1608302978225" duration="3131000" />
+      <workItem from="1608302978225" duration="8988000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1608246734185</created>
@@ -76,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608247293554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="container is ready">
+      <created>1608306356779</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608306356779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="container is ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="container is ready" />
   </component>
 </project>
