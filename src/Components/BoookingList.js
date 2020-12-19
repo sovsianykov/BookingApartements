@@ -4,7 +4,7 @@ import TotalPrice from "./TotalPrice";
 const styles = {
     ul: {
         listStyle : 'none',
-        width : '260px',
+        width : '500px',
         display: 'inline-block',
         // position : 'relative',
         // left: '850px',
@@ -18,13 +18,14 @@ const styles = {
 
 
 
-function BookingList() {
+function BookingList(props) {
     return (
         <ul className="bookinglist row" style={styles.ul}>
-            <BookingItem/>
-            <BookingItem/>
-            <BookingItem/>
-            <BookingItem/>
+            {props.booklists.map( booklist => {
+                return <BookingItem booklist={booklist} key={booklist.id}/>
+            })}
+
+
             <TotalPrice/>
         </ul>
     )

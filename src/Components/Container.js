@@ -10,13 +10,22 @@ import BoookingList from "./BoookingList";
 
 
  function  Container() {
-    return  (
+  let bookLists = [
+      {id:1 , completed : 'false', hotel: 'Plaza' , people : "4" , price: 400 },
+      {id:2 , completed : 'false', hotel: 'Premier' , people : "3" , price: 400 },
+      {id:3 , completed : 'false', hotel: 'Intercontinental' , people : "6" , price: 400 }
+  ]
+
+       const cityList = { val: 'input City Name',val1: 'New York', val2: 'Kyiv',val3: 'Paris'  }
+
+     return  (
+
         <div className ="container">
             <h2>Apartments</h2>
             <h4>A home away from home; choose the apartment that appeals to you the most</h4>
             <div className ="formWrap">
                <form action="#">
-                     <InputCity/>
+                     <InputCity cityList = {cityList}  />
                      <InputDateIn/>
                      <InputDateOut/>
                      <InputPersons/>
@@ -27,9 +36,7 @@ import BoookingList from "./BoookingList";
             </div>
             <button type="submit" id="confirm">confirm</button>
             <button type="submit" id="cancel">cancel</button>
-            <BoookingList/>
-            <BoookingList/>
-            <BoookingList/>
+            <BoookingList booklists={bookLists}/>
         </div>
 
 

@@ -1,10 +1,17 @@
 import React from "react";
 
 
-function InputCity() {
+function InputCity({cityList}) {
     return (
-        <input type="text" id="city" placeholder="City"/>
+     <div>
+         <input type="text" defaultValue={cityList.val}/>
 
-    )
+     </div>
+
+
+
+)
 }
+
+
 export default InputCity;

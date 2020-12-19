@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="619868a7-330c-493f-8b49-20bce547aab7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/BookingItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/BoookingList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TotalPrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BookingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BookingItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BoookingList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BoookingList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputCity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TotalPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TotalPrice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +58,8 @@
       <workItem from="1608241147223" duration="7813000" />
       <workItem from="1608296341585" duration="235000" />
       <workItem from="1608302978225" duration="8988000" />
+      <workItem from="1608396435027" duration="34000" />
+      <workItem from="1608406083303" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1608246734185</created>
@@ -85,6 +87,30 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
