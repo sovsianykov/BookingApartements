@@ -1,5 +1,5 @@
 import './App.css';
-import Container from "./Components/Container.js";
+
 import React ,{Component} from "react";
 import InputHotel from "./Components/InputHotel";
 import InputDateIn from "./Components/InputDateIn";
@@ -17,27 +17,30 @@ class  App extends Component {
         ]
 
     }
-
+        myOrder = { id:1, hotel: 'Plaza', dateIn : '12-12-2020',dateOut : '12-14-2020', pr: '2', price:'400' } ;
    hotelChangeHandler = (event) => {
-        console.log("changed")
-        this.setState(
+       this.myHotel = event.target.value
+
+       this.setState(
             {
                 orders: [
-                    { id:1, hotel: event.target.value, dateIn : "08-11-2020", dateOut : "10-12-2020", pr: event.target.value, price:'400' },
+                    { id:1, hotel: this.myHotel, dateIn : "08-11-2020", dateOut : "10-12-2020", pr: event.target.value, price:'400' },
                     { id:2, hotel: 'Premier', dateIn : '09-11-2020',dateOut : '09-13-2020', pr: '3', price:'300' },
                     { id:3, hotel: 'Hilton', dateIn : '10-02-2020',dateOut : '10-12-2020', pr: '1', price:'400' }
-                ]
+                ] ,
+                message : ''
 
             }
 
         )
    }
+
     hotelChangeHandler2 = (event) => {
-        console.log("changed")
+        let myDate  = event.target.value
         this.setState(
             {
                 orders: [
-                    { id:1, hotel: 'Plaza', dateIn : event.target.value, dateOut : "10-12-2020", pr: event.target.value, price:'400' },
+                    { id:1, hotel: 'Plaza', dateIn : myDate, dateOut : "10-12-2020", pr: event.target.value, price:'400' },
                     { id:2, hotel: 'Premier', dateIn : '09-11-2020',dateOut : '09-13-2020', pr: '3', price:'300' },
                     { id:3, hotel: 'Hilton', dateIn : '10-02-2020',dateOut : '10-12-2020', pr: '1', price:'400' }
                 ]
@@ -46,8 +49,11 @@ class  App extends Component {
 
         )
     }
-
-
+    changeMessageInput(event) {
+       this.setState({
+               message: event.target.value
+           })
+    }
 
     render() {
     return (
@@ -72,8 +78,14 @@ class  App extends Component {
             <Order hotel =  {this.state.orders[1].hotel} datein = {this.state.orders[1].dateIn}  dateout = {this.state.orders[1].dateOut}  />
             <Order hotel =  {this.state.orders[2].hotel} datein = {this.state.orders[2].dateIn}  dateout = {this.state.orders[2].dateOut}  />
 
-            <button type="submit" id="confirm">confirm</button>
-        <button type="submit" id="cancel">cancel</button>
+            <button type="submit" id="confirm" >confirm</button>
+            <button type="submit" id="cancel">cancel</button>
+            <input
+                type="text"
+                value={this.state.message}
+                onChange={this.changeMessageInput.bind(this)} >
+            </input>
+            <p>{this.state.message}</p>
 
 
 
