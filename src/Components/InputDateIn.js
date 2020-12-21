@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function InputDateIn() {
+function InputDateIn(props) {
     return (
-        <input type="date" id="checkin" placeholder="checkin"/>
+        <input type="date" id="checkin" onChange={props.changedD}/>
 
 
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import BookingItem from "./BookingItem";
+import BookingItem from "./Order";
 import TotalPrice from "./TotalPrice";
 const styles = {
     ul: {
