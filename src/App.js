@@ -102,6 +102,11 @@ class  App extends Component {
              hotel: this.myHotel , dateIn : this.myDateI, dateOut :this.myDateO   , pr: this.persons ,categoryPrice: this.category,
             id: Date.now()
         };
+          let array = this.state.myOrder
+        if ((array[array.length-1].hotel === newItem.hotel)&&(array[array.length-1].dateIn === newItem.dateIn)) {
+            return;
+        }
+
         this.setState(state => ({
          myOrder : state.myOrder.concat(newItem),
 
@@ -132,18 +137,19 @@ class  App extends Component {
 
         </div>
             <div className="submited">
-                { this.state.myOrder.map( order => {
+                { this.state.myOrder.map( (order,index) => {
                     return (                 <Order hotel =  {order.hotel}
                                                     datein = {order.dateIn}
                                                     dateout = {order.dateOut}
                                                     person =   {order.pr}
                                                     categ   =  {order.categoryPrice}
-                                                    key = {order.id}   />
+                                                    key = {order.id}
+                                                    index = {index}/>
 
 
                     )
                 }) }
-                <button type="submit" id="cancel">cancel</button>
+
             </div>
             {/*<button type="submit" id="confirm" >confirm</button>*/}
 
