@@ -4,9 +4,8 @@
     <list default="true" id="619868a7-330c-493f-8b49-20bce547aab7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputPersons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputPersons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputPrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectId" id="1lVaEfvny2PsgNx8scEFjc03lED" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,6 +62,7 @@
       <workItem from="1608537079187" duration="14636000" />
       <workItem from="1608562051886" duration="6982000" />
       <workItem from="1608622669644" duration="18615000" />
+      <workItem from="1608650521322" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1608246734185</created>
