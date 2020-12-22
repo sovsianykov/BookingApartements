@@ -21,10 +21,10 @@ class  App extends Component {
         ],
         categories: [
             { id: Date.now , categoryPrice: '' }
-        ]
-
+        ],
+        myOrder : [  { hotel: '', dateIn : '',dateOut : '', pr: '' ,categoryPrice: '' }  ]
            }
-        myOrder = { id:1, hotel: 'Plaza', dateIn : '12-12-2020',dateOut : '12-14-2020', pr: '2', price:'400' } ;
+
    hotelChangeHandler = (event) => {
        this.myHotel = event.target.value.toUpperCase() ;
 
@@ -71,6 +71,25 @@ class  App extends Component {
         )
     }
 
+    handleSubmit(event) {
+        event.preventDefault();
+        if (this.state.hotels[0].hotel.length === 0) {
+            return;
+        }
+        const newItem = {
+             hotel: '', dateIn : '',dateOut : '', pr: '' ,categoryPrice: '',
+            id: Date.now()
+        };
+        this.setState(state => ({
+            items: state.myOrder.concat(newItem),
+
+        }));
+    }
+
+
+
+
+
     render() {
     return (
     <div className="App">
@@ -86,7 +105,7 @@ class  App extends Component {
                 <InputPersons  changedP = {this.dataOutChangeHandler}/>
                 <InputPrice   changedCat = {this.categoryChangeHandler}                                        />
             </form>
-            <button type="submit" id="submit">submit</button>
+            <button type="submit" id="submit" onClick={this.handleSubmit.bind(this)}>submit</button>
 
 
         </div>
