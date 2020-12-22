@@ -28,3 +28,11 @@ ul.bookinglist textarea {
   display: block;
   padding: 15px 0 0 5px;
 }
+select {
+  width: 20%;
+  height: 100%;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border: 3px solid #26575e ;
+  margin-bottom: 6px;
+}

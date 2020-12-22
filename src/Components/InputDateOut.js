@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function InputDateOut() {
+function InputDateOut(props) {
     return (
-        <input type="date" id="checkout" placeholder="checkout"/>
+        <input type="date" id="checkout" onChange={props.changedO.bind(this)}/>
 
 
 

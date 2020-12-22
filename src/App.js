@@ -18,6 +18,9 @@ class  App extends Component {
         ],
         datesOut: [
             { id: Date.now , dateOut: '' }
+        ],
+        categories: [
+            { id: Date.now , categoryPrice: '' }
         ]
 
            }
@@ -44,12 +47,29 @@ class  App extends Component {
                 datesIn: [
                     { id: Date.now ,  dateIn : myDate }
                 ]
-
             }
-
         )
     }
-
+    dataOutChangeHandler = (event) => {
+        let myDate  = event.target.value
+        this.setState(
+            {
+                datesOut: [
+                    { id: Date.now ,  dateOut : myDate }
+                ]
+            }
+        )
+    }
+    categoryChangeHandler = (event) => {
+        let category  = event.target.value
+        this.setState(
+            {
+                categories: [
+                    { id: Date.now ,  categoryPrice : category }
+                ]
+            }
+        )
+    }
 
     render() {
     return (
@@ -62,9 +82,9 @@ class  App extends Component {
             <form action="#">
                 <InputHotel changed = {this.hotelChangeHandler} />
                 <InputDateIn changedD = {this.dataInlChangeHandler}  />
-                <InputDateOut/>
-                <InputPersons/>
-                <InputPrice/>
+                <InputDateOut changedO = {this.dataOutChangeHandler} />
+                <InputPersons  changedP = {this.dataOutChangeHandler}/>
+                <InputPrice   changedCat = {this.categoryChangeHandler}                                        />
             </form>
             <button type="submit" id="submit">submit</button>
 

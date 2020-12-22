@@ -1,9 +1,14 @@
 import React from "react";
 
 
-function InputPrice() {
+function InputPrice(props) {
     return (
-        <input type="txt" id="price" placeholder="price"/>
+    <select id="Category" name="Category" onChange={props.changedCat.bind(this)}>
+        <option value="lux">Lux</option>
+        <option value="Buisness">Buisness</option>
+        <option value="Econom">Econom</option>
+        <option value="Students">Students</option>
+    </select>
 
 
     )
