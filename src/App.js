@@ -22,7 +22,7 @@ class  App extends Component {
         categories: [
             { id: Date.now , categoryPrice: '' }
         ],
-        myOrder : [  { hotel: '', dateIn : '',dateOut : '', pr: '' ,categoryPrice: '' }  ]
+        myOrder : [  { id: Date.now , hotel: '', dateIn : '',dateOut : '', pr: '' ,categoryPrice: '' }  ]
            }
 
    hotelChangeHandler = (event) => {
@@ -32,8 +32,7 @@ class  App extends Component {
             {
                 hotels: [
                     { id: Date.now , hotel: this.myHotel },
-                ] ,
-                message : ''
+                ]
 
             }
 
@@ -103,17 +102,21 @@ class  App extends Component {
                 <InputDateIn changedD = {this.dataInlChangeHandler}  />
                 <InputDateOut changedO = {this.dataOutChangeHandler} />
                 <InputPersons  changedP = {this.dataOutChangeHandler}/>
-                <InputPrice   changedCat = {this.categoryChangeHandler}                                        />
+                <InputPrice   changedCat = {this.categoryChangeHandler}  />
             </form>
             <button type="submit" id="submit" onClick={this.handleSubmit.bind(this)}>submit</button>
 
 
         </div>
-            <Order hotel =  {this.state.hotels[0].hotel}
-                   datein = {this.state.datesIn[0].dateIn}
-                   dateout = {this.state.datesOut[0].dateOut}
-                   categ   =  {this.state.categories[0].categoryPrice}
-            />
+            { this.state.myOrder.map( order => {
+                return (                 <Order hotel =  {this.state.hotels[0].hotel}
+                                                datein = {this.state.datesIn[0].dateIn}
+                                                dateout = {this.state.datesOut[0].dateOut}
+                                                categ   =  {this.state.categories[0].categoryPrice}/>
+
+
+                )
+            }) }
             <button type="submit" id="confirm" >confirm</button>
             <button type="submit" id="cancel">cancel</button>
         </div>
