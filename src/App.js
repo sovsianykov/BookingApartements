@@ -10,23 +10,25 @@ import Order from "./Components/Order";
 
 class  App extends Component {
     state = {
-        orders: [
-            { id:1, hotel: 'Plaza', dateIn : '12-12-2020',dateOut : '12-14-2020', pr: '2', price:'400' },
-            { id:2, hotel: 'Premier', dateIn : '09-11-2020',dateOut : '09-13-2020', pr: '3', price:'300' },
-            { id:3, hotel: 'Hilton', dateIn : '10-02-2020',dateOut : '10-12-2020', pr: '1', price:'400' }
+        hotels: [
+            { id: Date.now , hotel: '' }
+            ],
+        datesIn: [
+            { id: Date.now , dateIn: '' }
+        ],
+        datesOut: [
+            { id: Date.now , dateOut: '' }
         ]
 
-    }
+           }
         myOrder = { id:1, hotel: 'Plaza', dateIn : '12-12-2020',dateOut : '12-14-2020', pr: '2', price:'400' } ;
    hotelChangeHandler = (event) => {
-       this.myHotel = event.target.value
+       this.myHotel = event.target.value.toUpperCase() ;
 
        this.setState(
             {
-                orders: [
-                    { id:1, hotel: this.myHotel, dateIn : "08-11-2020", dateOut : "10-12-2020", pr: event.target.value, price:'400' },
-                    { id:2, hotel: 'Premier', dateIn : '09-11-2020',dateOut : '09-13-2020', pr: '3', price:'300' },
-                    { id:3, hotel: 'Hilton', dateIn : '10-02-2020',dateOut : '10-12-2020', pr: '1', price:'400' }
+                hotels: [
+                    { id: Date.now , hotel: this.myHotel },
                 ] ,
                 message : ''
 
@@ -35,25 +37,19 @@ class  App extends Component {
         )
    }
 
-    hotelChangeHandler2 = (event) => {
+    dataInlChangeHandler = (event) => {
         let myDate  = event.target.value
         this.setState(
             {
-                orders: [
-                    { id:1, hotel: 'Plaza', dateIn : myDate, dateOut : "10-12-2020", pr: event.target.value, price:'400' },
-                    { id:2, hotel: 'Premier', dateIn : '09-11-2020',dateOut : '09-13-2020', pr: '3', price:'300' },
-                    { id:3, hotel: 'Hilton', dateIn : '10-02-2020',dateOut : '10-12-2020', pr: '1', price:'400' }
+                datesIn: [
+                    { id: Date.now ,  dateIn : myDate }
                 ]
 
             }
 
         )
     }
-    changeMessageInput(event) {
-       this.setState({
-               message: event.target.value
-           })
-    }
+
 
     render() {
     return (
@@ -65,7 +61,7 @@ class  App extends Component {
         <div className ="formWrap">
             <form action="#">
                 <InputHotel changed = {this.hotelChangeHandler} />
-                <InputDateIn changedD = {this.hotelChangeHandler2}  />
+                <InputDateIn changedD = {this.dataInlChangeHandler}  />
                 <InputDateOut/>
                 <InputPersons/>
                 <InputPrice/>
@@ -74,21 +70,9 @@ class  App extends Component {
 
 
         </div>
-            <Order hotel =  {this.state.orders[0].hotel} datein = {this.state.orders[0].dateIn}  dateout = {this.state.orders[0].dateOut}  />
-            <Order hotel =  {this.state.orders[1].hotel} datein = {this.state.orders[1].dateIn}  dateout = {this.state.orders[1].dateOut}  />
-            <Order hotel =  {this.state.orders[2].hotel} datein = {this.state.orders[2].dateIn}  dateout = {this.state.orders[2].dateOut}  />
-
+            <Order hotel =  {this.state.hotels[0].hotel} datein = {this.state.datesIn[0].dateIn}  dateout = {this.state.datesOut[0].dateOut}  />
             <button type="submit" id="confirm" >confirm</button>
             <button type="submit" id="cancel">cancel</button>
-            <input
-                type="text"
-                value={this.state.message}
-                onChange={this.changeMessageInput.bind(this)} >
-            </input>
-            <p>{this.state.message}</p>
-
-
-
         </div>
     </div>
   );

@@ -5,8 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputDateIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputDateIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/InputHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,8 @@
       <workItem from="1608396435027" duration="34000" />
       <workItem from="1608406083303" duration="884000" />
       <workItem from="1608537079187" duration="14636000" />
-      <workItem from="1608562051886" duration="5375000" />
+      <workItem from="1608562051886" duration="6982000" />
+      <workItem from="1608622669644" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1608246734185</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608547184314</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dynamic&#10; is ready">
+      <created>1608567441769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608567441769</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
