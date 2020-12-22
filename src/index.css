@@ -36,3 +36,9 @@ select {
   border: 3px solid #26575e ;
   margin-bottom: 6px;
 }
+#hotel {
+  width: 300px;
+}
+.bookingitem {
+  margin: 20px 0 ;
+}

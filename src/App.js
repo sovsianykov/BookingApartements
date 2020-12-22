@@ -90,7 +90,11 @@ class  App extends Component {
 
 
         </div>
-            <Order hotel =  {this.state.hotels[0].hotel} datein = {this.state.datesIn[0].dateIn}  dateout = {this.state.datesOut[0].dateOut}  />
+            <Order hotel =  {this.state.hotels[0].hotel}
+                   datein = {this.state.datesIn[0].dateIn}
+                   dateout = {this.state.datesOut[0].dateOut}
+                   categ   =  {this.state.categories[0].categoryPrice}
+            />
             <button type="submit" id="confirm" >confirm</button>
             <button type="submit" id="cancel">cancel</button>
         </div>
