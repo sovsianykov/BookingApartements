@@ -143,9 +143,10 @@ class  App extends Component {
 
                     )
                 }) }
+                <button type="submit" id="cancel">cancel</button>
             </div>
-            <button type="submit" id="confirm" >confirm</button>
-            <button type="submit" id="cancel">cancel</button>
+            {/*<button type="submit" id="confirm" >confirm</button>*/}
+
         </div>
     </div>
   );
