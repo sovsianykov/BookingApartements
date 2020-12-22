@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function InputPersons() {
+function InputPersons(props) {
     return (
-        <input type="txt" id="persons" placeholder="persons"/>
+        <input type="txt" id="pr" placeholder="persons" onChange={props.changedP.bind(this)}/>
 
 
     )

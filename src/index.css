@@ -42,3 +42,9 @@ select {
 .bookingitem {
   margin: 20px 0 ;
 }
+  .blue  {
+  color: #2e64c4;
+}
+.bookingitem:first-child {
+  display: none;
+}

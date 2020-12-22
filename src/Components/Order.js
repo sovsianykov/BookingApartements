@@ -20,7 +20,8 @@ function Order (props) {
                <span  style={styles.book}>{props.hotel} </span> &nbsp;  hotel &nbsp; ordered from &nbsp;
                  <span style={styles.book}>  {props.datein}
             </span> &nbsp; to &nbsp; <span style={styles.book}>{props.dateout}</span>
-                &nbsp; . category - <span  style={styles.book}>{props.categ}</span>
+                &nbsp; . Stateroom category - <span  style={styles.book}>{props.categ}</span> .&nbsp;
+                Number of persons - <span  style={styles.book}>{props.person}</span>
             </h4>
 
         </div>

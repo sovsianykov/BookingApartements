@@ -19,6 +19,9 @@ class  App extends Component {
         datesOut: [
             { id: Date.now , dateOut: '' }
         ],
+        persons: [
+            { id: Date.now , pr: '' }
+        ],
         categories: [
             { id: Date.now , categoryPrice: '' }
         ],
@@ -26,7 +29,8 @@ class  App extends Component {
            }
 
    hotelChangeHandler = (event) => {
-       this.myHotel = event.target.value.toUpperCase() ;
+       this.myHotel = event.target.value ;
+       event.target.className = 'blue'
 
        this.setState(
             {
@@ -40,31 +44,49 @@ class  App extends Component {
    }
 
     dataInlChangeHandler = (event) => {
-        let myDate  = event.target.value
+        this.myDateI  = event.target.value
+        event.target.className = 'blue'
+
         this.setState(
             {
                 datesIn: [
-                    { id: Date.now ,  dateIn : myDate }
+                    { id: Date.now ,  dateIn : this.myDateI }
                 ]
             }
         )
     }
     dataOutChangeHandler = (event) => {
-        let myDate  = event.target.value
+        this.myDateO  = event.target.value
+        event.target.className = 'blue'
+
         this.setState(
             {
                 datesOut: [
-                    { id: Date.now ,  dateOut : myDate }
+                    { id: Date.now ,  dateOut : this.myDateO }
+                ]
+            }
+        )
+    }
+    personsChangeHandler = (event) => {
+        this.persons  = event.target.value
+        event.target.className = 'blue'
+
+        this.setState(
+            {
+                datesOut: [
+                    { id: Date.now ,   pr: this.persons }
                 ]
             }
         )
     }
     categoryChangeHandler = (event) => {
-        let category  = event.target.value
+        this.category  = event.target.value
+        event.target.className = 'blue'
+
         this.setState(
             {
                 categories: [
-                    { id: Date.now ,  categoryPrice : category }
+                    { id: Date.now ,  categoryPrice : this.category }
                 ]
             }
         )
@@ -72,15 +94,16 @@ class  App extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+
         if (this.state.hotels[0].hotel.length === 0) {
             return;
         }
         const newItem = {
-             hotel: '', dateIn : '',dateOut : '', pr: '' ,categoryPrice: '',
+             hotel: this.myHotel , dateIn : this.myDateI, dateOut :this.myDateO   , pr: this.persons ,categoryPrice: this.category,
             id: Date.now()
         };
         this.setState(state => ({
-            items: state.myOrder.concat(newItem),
+         myOrder : state.myOrder.concat(newItem),
 
         }));
     }
@@ -96,27 +119,31 @@ class  App extends Component {
   <h1>Book Now</h1>
         <h2>Apartments</h2>
         <h4>A home away from home; choose the apartment that appeals to you the most</h4>
-        <div className ="formWrap">
+        <div className= 'formWrap' >
             <form action="#">
                 <InputHotel changed = {this.hotelChangeHandler} />
                 <InputDateIn changedD = {this.dataInlChangeHandler}  />
                 <InputDateOut changedO = {this.dataOutChangeHandler} />
-                <InputPersons  changedP = {this.dataOutChangeHandler}/>
+                <InputPersons  changedP = {this.personsChangeHandler}/>
                 <InputPrice   changedCat = {this.categoryChangeHandler}  />
             </form>
             <button type="submit" id="submit" onClick={this.handleSubmit.bind(this)}>submit</button>
 
 
         </div>
-            { this.state.myOrder.map( order => {
-                return (                 <Order hotel =  {this.state.hotels[0].hotel}
-                                                datein = {this.state.datesIn[0].dateIn}
-                                                dateout = {this.state.datesOut[0].dateOut}
-                                                categ   =  {this.state.categories[0].categoryPrice}/>
+            <div className="submited">
+                { this.state.myOrder.map( order => {
+                    return (                 <Order hotel =  {order.hotel}
+                                                    datein = {order.dateIn}
+                                                    dateout = {order.dateOut}
+                                                    person =   {order.pr}
+                                                    categ   =  {order.categoryPrice}
+                                                    key = {order.id}   />
 
 
-                )
-            }) }
+                    )
+                }) }
+            </div>
             <button type="submit" id="confirm" >confirm</button>
             <button type="submit" id="cancel">cancel</button>
         </div>
