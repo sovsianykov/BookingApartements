@@ -13,7 +13,7 @@ const styles = {
        cross : {
         position: 'absolute',
            right: '0',
-         // border: '1px solid red',
+         border: 'none',
            fontSize: '.7rem',
            display : 'inline-block',
            marginLeft : 'auto'
@@ -56,7 +56,7 @@ function Order (props) {
             </span> &nbsp; to &nbsp; <span style={styles.book}>{props.dateout}</span>
               &nbsp; . Stateroom category - <span  style={styles.book}>{props.categ}</span> .&nbsp;
               Number of persons - <span  style={styles.book}>{props.person}</span>
-              <a style={styles.cross} href="#" onClick={toggleClasses}>&#x274C;</a>
+              <button style={styles.cross} href="#" onClick={toggleClasses}>&#x274C;</button>
 
           </h4>
       </div>
