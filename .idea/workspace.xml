@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="619868a7-330c-493f-8b49-20bce547aab7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/photo-1552359129-456ccf2ffd52.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simple-background-blue-simple-minimalism-wallpaper-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y-so-serious-white.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputHotel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InputPrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
@@ -181,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608651764359</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="new look">
+      <created>1608725055688</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608725055688</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +217,7 @@
     <MESSAGE value="dynamic&#10; new" />
     <MESSAGE value="dynamic&#10;free 4" />
     <MESSAGE value="dynamic&#10;free 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic&#10;free 5" />
+    <MESSAGE value="new look" />
+    <option name="LAST_COMMIT_MESSAGE" value="new look" />
   </component>
 </project>

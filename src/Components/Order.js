@@ -3,7 +3,7 @@ import Context from "../context";
 
 const styles = {
     book : {
-              color: '#CBDDE1',
+              color: '#be4621',
               fontSize: '1.5rem',
                lineHeight : ' .7rem',
                paddingTop : '.5rem',
